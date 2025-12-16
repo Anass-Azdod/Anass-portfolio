@@ -1,0 +1,258 @@
+body{
+    MARGIN: 0;
+    padding-top: 30px;
+}
+header{
+    padding-top: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; 
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    float: left;
+    padding-left: 2rem;
+    transition: 0.3s;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.nav-button{
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: xx-large;
+    padding-right: 1rem;
+    transition: 0.5s;
+    
+
+}
+header a:hover:not(.logo){
+    color: black;
+    background-color: white;
+    padding: 5px auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    
+}
+ul{
+    list-style: none;
+}
+.nav-link{
+    position:fixed;
+    top: 1.9rem;
+    left: 50%;
+    background-color:  rgb(30, 28, 28);
+    opacity: 90%;
+    width: 100%;
+    height: 100%;
+    padding: 1rem ;
+    display: none;
+    
+}
+
+ul  a{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight:900;
+    font-size: x-large;
+    margin: 0 7%;
+    
+}
+
+.nav-link.active {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.nav-element {
+    margin-right: 1rem;
+    display: none;
+    transition: 0.5s;
+}
+.nav-element a{
+    color: white;
+    font-size: larger;
+    font-weight: 500;
+    padding: 0 2rem;
+}
+.home{
+    padding-left: 1rem;}
+.home-h{
+    font-size: 3.5rem;
+    min-width: 250px;
+    
+}
+.typing-text{
+    font-size: x-large;
+    font-weight: bold;
+    
+}
+
+span{
+    color: rgb(108, 65, 10);
+    font-style: italic;
+}
+
+img{
+    width: auto;
+    height:fit-content;
+    
+    
+   
+}
+.skill{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.skill h3{
+    border: 3px solid black;
+    padding: 0.5rem;
+    
+}
+.btn{
+    margin-left: 2rem;
+    font-weight: 900;
+    color: black;
+    border: 3px solid black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.btn2{
+    font-weight: 700;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: black;
+    border: 3px solid black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+}
+.service{
+    padding-left: 1rem;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem ;
+
+}
+.ser{
+    text-align: center;
+    border: 3px solid black;
+    
+    
+}
+h2{color: rgb(108, 65, 10);}
+
+
+.inp{
+    margin: 0 1rem;
+    border: 3px solid black;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.inp input{
+    max-width:20rem;
+    width: 100%;
+    min-height: 1.9rem;
+}
+
+.send{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    display: block;
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px 9rem;  
+    
+}
+.porject{
+    padding-left: 1rem;
+}
+footer{
+    position: absolute;
+    background-color: rgb(40, 38, 38);
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+.foot{
+    padding-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(width > 600px){
+    img{
+        margin-left: 100px;
+
+    }
+    .contact{
+        max-width: fit-content;
+        width: 100%;
+        margin:auto;
+    }
+}
+@media(width > 768px){
+    .nav-button{display: none;}
+    nav{display: none;}
+    .nav-element{
+        display: flex;
+        flex-direction: row;
+        font-size: larger;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    img{
+        height: 490px;
+        padding-top: 2rem;
+        margin-left: -20px;
+    }
+    .contact{
+        max-width: fit-content;
+        width: 100%;
+        margin:auto;
+    }
+    
+
+
+}
