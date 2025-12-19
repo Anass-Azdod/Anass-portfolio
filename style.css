@@ -49,7 +49,7 @@ ul{
 .nav-link{
     position:fixed;
     top: 1.9rem;
-    left: 50%;
+    left: 40%;
     background-color:  rgb(30, 28, 28);
     opacity: 90%;
     width: 100%;
@@ -105,13 +105,7 @@ span{
     font-style: italic;
 }
 
-img{
-    width: auto;
-    height:fit-content;
-    
-    
-   
-}
+
 .skill{
     display: flex;
     flex-wrap: wrap;
@@ -150,6 +144,7 @@ img{
 }
 .service{
     padding-left: 1rem;
+    padding-right: 0.5rem;
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -178,6 +173,10 @@ h2{color: rgb(108, 65, 10);}
     max-width:20rem;
     width: 100%;
     min-height: 1.9rem;
+}
+input{
+    border-style:solid ;
+    border-color: black;
 }
 
 .send{
@@ -217,7 +216,15 @@ footer{
 
 
 
-
+@media(width < 480px){
+    img{
+        height: auto;
+        width: 100%;
+    }
+    .send{
+        padding: 8px 7.3rem;
+    }
+}
 
 @media(width > 600px){
     img{
